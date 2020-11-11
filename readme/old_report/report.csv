@@ -1,0 +1,4 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+JaCoCo Report/Check Order related,com.importzhh.jacoco_test,JacocoTestApplication,0,8,0,0,0,3,0,2,0,2
+JaCoCo Report/Check Order related,com.importzhh.jacoco_test.user,UserController,6,50,0,0,2,12,1,6,1,6
+JaCoCo Report/Check Order related,com.importzhh.jacoco_test.user,User,145,24,30,0,0,4,19,7,4,7

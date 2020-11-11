@@ -1,0 +1,5 @@
+swagger:
+  title: jacoco_test
+  description: 用于生成覆盖率文件
+  base-package: com.importzhh
+  base-path: /**
