@@ -46,8 +46,15 @@
                     <classfiles>
                         <fileset dir="${checkOrderClasspath}" />
                     </classfiles>
-                    <sourcefiles encoding="gbk">
-                        <fileset dir="${checkOrderSrcpath}" />
+                    <sourcefiles encoding="utf-8">
+                        <fileset dir="${checkOrderSrcpath}" >
+                            <!-- exclude classes in package com.acme.models whose name starts with Spring -->
+                            <exclude>com/importzhh/hello/Hello*</exclude>
+                            <!-- exclude classes in package com.acme.api whose name ends with Api -->
+                            <exclude>com/importzhh/api/*Api.class</exclude>
+                            <!-- exclude all classes in package com.acme.generated -->
+                            <exclude>com/importzhh/entity/**/*</exclude>
+                        </fileset>
                     </sourcefiles>
                 </group>
             </structure>
