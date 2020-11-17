@@ -13,9 +13,12 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>jacoco_test</name>
     <description>Demo project for Spring Boot</description>
-
     <properties>
         <java.version>1.8</java.version>
+        <!--        todo register on SonarQube to get your application projectKey and login token -->
+        <sonar.host.url>http://192.168.0.104:9000</sonar.host.url>
+        <sonar.projectKey>coco</sonar.projectKey>
+        <sonar.login>66ba43f1f802509f863520b7d14a55efca5d5c1c</sonar.login>
     </properties>
 
     <dependencies>
@@ -86,6 +89,11 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.6.0.1398</version>
             </plugin>
         </plugins>
     </build>
